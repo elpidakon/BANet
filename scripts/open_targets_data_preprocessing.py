@@ -19,7 +19,7 @@ import requests
 # A. Get drug-target associations from the Drug dataset
 
 # Replace with the path to the molecule directory
-drugs_data_path = "path/to/molecule/folder"
+drugs_data_path = "data/raw/open_targets/molecule"
 
 # establish spark connection
 spark = (
@@ -134,7 +134,7 @@ drug_target_pairs.to_csv('data/open_targets/drug_target_pairs.csv',
 # E. Get target-AE associations from the Target dataset 
 
 # Replace with the path to the targets directory
-targets_data_path = "path/to/targets/folder"
+targets_data_path = "data/raw/open_targets/targets"
 
 # establish spark connection
 spark = (
