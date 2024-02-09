@@ -14,7 +14,6 @@ setwd(workdir)
 set.seed(13579)
 
 # Read data file with FAERS counts for TdP
-#tdp_counts <- read.csv("tdp_faers_counts_min_5.csv")
 counts <- read.csv("qt_prolongation_faers_counts_min_5.csv")
 # Generate df with all counts
 qt_prolongation_cases <- data.frame(dde_tuple = counts$dde_tuple,
@@ -27,6 +26,9 @@ qt_prolongation_cases <- data.frame(dde_tuple = counts$dde_tuple,
                         N_001 = counts$n_001,
                         N_000 = counts$not_d1_not_d2_counter - counts$n_001)
 
+# Load a and b parameters for the prior (estimated using Empirical Bayesian approach from the AE rate distribution in FAERS)
+# a <- 0.01714869
+# b <- 112.5411
 
 # Set hyperparameter values
 alpha_0 <- a
