@@ -7,9 +7,8 @@ library(matrixStats)
 library(dplyr)
 library(ROCR)
 
-# Set working directory
-#workdir <- "/Users/elpida/OneDrive - The University of Liverpool/BIOLOGICAL PLAUSIBILITY PAPER"
-workdir <- "C:/Users/Elpida/OneDrive - The University of Liverpool"
+# Set working directory (replace with path)
+workdir <- "path/to/working/directory"
 setwd(workdir)
 # Set seed value
 set.seed(13579)
