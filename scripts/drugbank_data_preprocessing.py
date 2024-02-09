@@ -1,5 +1,5 @@
 # Kontsioti, Maskell, Anderson & Pirmohamed, Identifying drug-drug interactions in spontaneous reports utilizing signal detection and biological plausibility aspects (2024)
-# This script performs preprocessing of the data downloaded from Open Targets
+# This script performs preprocessing of the data downloaded from DrugBank
   
 ## Adapted from: https://caseolap.github.io/docs/drug/drugbank/#parsing-drugs-data
 import re
