@@ -14,7 +14,7 @@ setwd(workdir)
 set.seed(13579)
 
 # Read data file with FAERS counts for TdP
-counts <- read.csv("qt_prolongation_faers_counts_min_5.csv")
+counts <- read.csv("qt_prolongation_faers_counts.csv")
 # Generate df with all counts
 qt_prolongation_cases <- data.frame(dde_tuple = counts$dde_tuple,
                         N_111 = counts$n_111,
